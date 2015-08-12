@@ -44,8 +44,8 @@ Check [CONTRIBUTING.md](https://github.com/jquery-boilerplate/boilerplate/blob/m
 
 ## History
 
-Check [Releases](https://github.com/jquery-boilerplate/jquery-boilerplate/releases) for detailed changelog.
+ for detailed changelog.
 
 ## License
 
-[MIT License](http://zenorocha.mit-license.org/) © Zeno Rocha
+[MIT License](https://github.com/sahil290791/spell-It/blob/master/LICENSE) © Sahil Prajapati
