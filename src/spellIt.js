@@ -44,7 +44,6 @@
 			            }
 				},
 		        splitCode: function(){
-		        		console.log('words is '+this.actual_code);
 			            return this.actual_code;
 		        },
 		        getCodeHash: function() {
@@ -52,7 +51,6 @@
 			            for (var i=0; i< this.words.length; i++){
 			                obj[this.actual_code[i]] = this.words[i];
 			            }
-			            console.log('obj '+obj);
 			            return obj;
 		        },
 		        showOutput: function(){
@@ -64,7 +62,7 @@
 		        	}
 		        	data += "</tbody>";
 		        	container.addClass(this.settings.className).append(data);
-		        	$('#'+this.settings.target).append(container);
+		        	$(this.settings.target).append(container);
 		        }
 
 		});
