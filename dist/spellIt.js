@@ -10,8 +10,8 @@
 		// Create the defaults once
 		var pluginName = "spellIt",
 						defaults = {
-							className: "spellIt",
-							target: "result",
+							className: "spellIt",//class to be added to table
+							target: "result",//id name
 							getTabulatedResult: true
 						};
 		
