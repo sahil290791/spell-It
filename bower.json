@@ -1,12 +1,12 @@
 {
 	"name": "jquery-boilerplate",
-	"version": "3.5.0",
-	"homepage": "http://jqueryboilerplate.com",
+	"version": "1.0.0",
+	"homepage": "http://sahil290791.github.io/spell-It/",
 	"authors": [
-		"Zeno Rocha <hi@zenorocha.com>"
+		"Sahil Prajapati <sahilprjpt206@gmail.com>"
 	],
-	"description": "A jump-start for jQuery plugins development.",
-	"main": "src/jquery.boilerplate.js",
+	"description": "A new way to spell characters for better readability.",
+	"main": "src/spellIt.js",
 	"keywords": [
 		"jquery",
 		"plugin",

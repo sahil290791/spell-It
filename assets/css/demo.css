@@ -1,0 +1,67 @@
+body{
+	height: 100vh;
+}
+.navbar{
+    background: none repeat scroll 0 0 #424242;
+    color: #fff;
+    border-radius: 0;
+    border: none;
+}
+.navbar-brand{
+	font-family: 'Arvo', serif;
+	font-style: italic;
+}
+.navbar .navbar-brand{
+	color: #fff !important;
+}
+.navbar a{
+	display: inline-block;
+}
+.navbar img {
+    height: 39px;
+    margin-top: 4px;
+    width: 39px;
+}
+.margin-top-md{
+	margin-top: 10px;
+}
+.margin-top-sm{
+	margin-top: 5px;
+}
+.margin-top-xs{
+	margin-top: 2px;
+}
+.margin-bottom-md{
+	margin-bottom: 10px;
+}
+.margin-bottom-sm{
+	margin-bottom: 5px;
+}
+.margin-bottom-xs{
+	margin-bottom: 2px;
+}
+.resultContainer{
+    background: none repeat scroll 0 0 #333;
+    border-radius: 3px;
+    color: #fff;
+    height: 328px;
+    overflow: auto;
+    padding: 8px;
+}
+footer{
+    background: none repeat scroll 0 0 #eee;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    padding: 10px 2px;
+}
+p{
+    font-family: 'Arvo',serif;
+    font-style: italic;
+}
+.link {
+    position: absolute;
+    right: 3px;
+    top: 1px;
+}
