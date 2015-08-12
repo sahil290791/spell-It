@@ -1,4 +1,4 @@
-### This plugin provides a way to spell characters from a string and present it to the user. 
+### This plugin provides a simple way to spell characters of a string and present it to the user. 
 
 ## Usage
 
