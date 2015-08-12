@@ -7,11 +7,10 @@
 ;(function ( $, window, document, undefined ) {
 
 	"use strict";
-		// Create the defaults once
 		var pluginName = "spellIt",
 						defaults = {
-							className: "spellIt",//class to be added to table
-							target: "result",//id name
+							className: "spellIt",
+							target: "result",
 							getTabulatedResult: true
 						};
 		
@@ -76,9 +75,6 @@
 		});
 		$.fn[ pluginName ] = function ( options ) {
 				return this.each(function() {
-						// if ( !$.data( this, "plugin_" + pluginName ) ) {
-						// 		$.data( this, "plugin_" + pluginName, new Plugin( this, options ) );
-						// }
 						new Plugin( this, options );
 				});
 		};
