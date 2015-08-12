@@ -17,7 +17,7 @@
 3. Call the plugin:
 
 	```javascript
-	$("#targer").spellIt({
+	$("#code").spellIt({
 		className: "spellify",//optional class to be added to the table
 		target: "result",//id name
 		getTabulatedResult: true // appends a table to the specified target
@@ -25,16 +25,26 @@
 	```
 ## Guides
 
+Call it on the element which contains the code and that's it. If you have your own way of representing the spellified code. Just set the getTabulatedResult option to false and it will return an array of the spellified code.
+
+	```javascript
+	var spellifiedCode = $("#code").spellIt({
+							className: "spellify",
+							getTabulatedResult: false
+						});
+	//returns ["Alfa", "Romeo", "Tango"]
+	```
+
 Available options: 
 
 	```html
-	 className: "anyClass" ( Use this option to add a class to the table created.)
+	 	className: "anyClass" ( Use this option to add a class to the table created.)
 	
-	 target: "target-ID" (Specify the ID of the element to which the result should be appended to.)
+	 	target: "target-ID" (Specify the ID of the element to which the result should be appended to.)
 	
-	 getTabulatedResult: true (true by default, returns a HTML table appended to the target
-				, if set to false it will give an array of the spellified characters)
-       ```							
+	 	getTabulatedResult: true (true by default, returns a HTML table appended to the target
+							, if set to false it will give an array of the spellified characters)
+    ```							
 
 ## Examples
 
