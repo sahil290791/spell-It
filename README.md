@@ -26,12 +26,13 @@
 ## Guides
 
 Available options: 
+
 	```html
-	className: "anyClass" ( Use this option to add a class to the table created.)
+	 className: "anyClass" ( Use this option to add a class to the table created.)
 	
-	target: "target-ID" (Specify the ID of the element to which the result should be appended to.)
+	 target: "target-ID" (Specify the ID of the element to which the result should be appended to.)
 	
-	getTabulatedResult: true (true by default, returns a HTML table appended to the target
+	 getTabulatedResult: true (true by default, returns a HTML table appended to the target
 				, if set to false it will give an array of the spellified characters)
        ```							
 
