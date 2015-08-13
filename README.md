@@ -1,4 +1,4 @@
-### This plugin provides a simple way to spell characters of a string and present it to the user. 
+### This plugin provides a simple way to spell characters of a string and present it to the user. It supports various characters and symbols.
 
 ## Usage
 
@@ -61,4 +61,8 @@ Check [CONTRIBUTING.md](https://github.com/sahil290791/spell-me/blob/master/CONT
 ## License
 
 [MIT License](https://github.com/sahil290791/spell-me/blob/master/LICENSE) © Sahil Prajapati
+
+## Source
+
+ Characters source from [Wiki](https://en.wikipedia.org/wiki/NATO_phonetic_alphabet)
 
