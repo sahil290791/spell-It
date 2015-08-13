@@ -37,14 +37,14 @@ Call it on the element which contains the code and that's it. If you have your o
 
 Available options: 
 
-	```html
+```html
 	 	className: "anyClass" ( Use this option to add a class to the table created.)
 	
 	 	target: "target-ID" (Specify the ID of the element to which the result should be appended to.)
 	
 	 	getTabulatedResult: true (true by default, returns a HTML table appended to the target
 							, if set to false it will give an array of the spellified characters)
-    ```							
+```							
 
 ## Examples
 
