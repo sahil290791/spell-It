@@ -1,6 +1,6 @@
 {
   "name": "spellIt",
-  "title": "Spell It"
+  "title": "Spell It",
   "version": "0.1.0",
   "description": "A new way to spell characters for better readability",
   "keywords": [
@@ -20,7 +20,7 @@
     "email": "sahilprjpt206@gmail.com",
     "url": "https://github.com/sahil290791"
   },
-  "homepage": "http://jqueryboilerplate.com",
+  "homepage": "http://sahil290791.github.io/spell-It/",
   "contributors": [
     {
       "name": "Sahil Prajapati",
