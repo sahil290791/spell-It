@@ -48,7 +48,7 @@ Available options:
 
 ## Examples
 
-Coming Soon 
+Click [here](https://sahil290791.github.io/spell-me/) to see the demo.
 
 ## Contributing
 
