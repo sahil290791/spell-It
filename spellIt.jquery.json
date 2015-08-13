@@ -1,13 +1,12 @@
 {
   "name": "spellIt",
+  "title": "Spell It"
   "version": "0.1.0",
   "description": "A new way to spell characters for better readability",
   "keywords": [
     "jquery-plugin",
     "jquery",
-    "spellIt",
-    "spell-it",
-    "spell it"
+    "spellIt"
   ],
   "repository": {
     "type": "git",
