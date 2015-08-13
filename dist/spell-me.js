@@ -9,9 +9,9 @@
 
 	"use strict";
 		// Create the defaults once
-		var pluginName = "spellIt",
+		var pluginName = "spellMe",
 						defaults = {
-							className: "spellIt",//class to be added to table
+							className: "spellMe",//class to be added to table
 							target: "result",//id name
 							getTabulatedResult: true
 						};

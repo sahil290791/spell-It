@@ -1,27 +1,28 @@
 {
-  "name": "spellIt",
-  "title": "Spell It",
+  "name": "spell-me",
+  "title": "Spell Me",
   "version": "0.1.1",
   "description": "A new way to spell characters for better readability",
   "keywords": [
     "jquery-plugin",
     "jquery",
-    "spellIt",
-    "spell-it"
+    "spellme",
+    "spell-me",
+    "spell me"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/sahil290791/spell-It"
+    "url": "https://github.com/sahil290791/spell-me"
   },
   "bugs": {
-    "url": "https://github.com/sahil290791/spell-It/issues"
+    "url": "https://github.com/sahil290791/spell-me/issues"
   },
   "author": {
     "name": "Sahil Prajapati",
     "email": "sahilprjpt206@gmail.com",
     "url": "https://github.com/sahil290791"
   },
-  "homepage": "http://sahil290791.github.io/spell-It/",
+  "homepage": "http://sahil290791.github.io/spell-me/",
   "contributors": [
     {
       "name": "Sahil Prajapati",
@@ -32,7 +33,7 @@
   "licenses": [
     {
       "type":"MIT",
-      "url": "https://github.com/sahil290791/spell-It/blob/master/LICENSE"
+      "url": "https://github.com/sahil290791/spell-me/blob/master/LICENSE"
     }
   ],
   "dependencies": {
