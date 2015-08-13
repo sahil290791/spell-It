@@ -11,7 +11,7 @@
 2. Include plugin's code:
 
 	```html
-	<script src="dist/spellme.min.js"></script>
+	<script src="dist/spell-me.min.js"></script>
 	```
 
 3. Call the plugin:
