@@ -17,7 +17,7 @@
 3. Call the plugin:
 
 	```javascript
-	$("#code").spellIt({
+	$("#code").spellMe({
 		className: "spellify",//optional class to be added to the table
 		target: "result",//id name
 		getTabulatedResult: true // appends a table to the specified target
@@ -26,9 +26,8 @@
 ## Guides
 
 Call it on the element which contains the code and that's it. If you have your own way of representing the spellified code. Just set the getTabulatedResult option to false and it will return an array of the spellified code.
-
 	```javascript
-	var spellifiedCode = $("#code").spellIt({
+	var spellifiedCode = $("#code").spellMe({
 							className: "spellify",
 							getTabulatedResult: false
 						});
@@ -52,7 +51,7 @@ Coming Soon
 
 ## Contributing
 
-Check [CONTRIBUTING.md](https://github.com/sahil290791/spell-It/blob/master/CONTRIBUTING.md) for more information.
+Check [CONTRIBUTING.md](https://github.com/sahil290791/spell-me/blob/master/CONTRIBUTING.md) for more information.
 
 ## History
 
@@ -60,5 +59,5 @@ Check [CONTRIBUTING.md](https://github.com/sahil290791/spell-It/blob/master/CONT
 
 ## License
 
-[MIT License](https://github.com/sahil290791/spell-It/blob/master/LICENSE) © Sahil Prajapati
+[MIT License](https://github.com/sahil290791/spell-me/blob/master/LICENSE) © Sahil Prajapati
 
