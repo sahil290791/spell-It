@@ -1,7 +1,7 @@
 {
   "name": "spell-me",
   "title": "Spell Me",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A new way to spell characters for better readability",
   "keywords": [
     "jquery-plugin",
