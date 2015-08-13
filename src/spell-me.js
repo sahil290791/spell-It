@@ -1,4 +1,5 @@
 /*
+ *  Spell-It - v.1.2
  *  Made by Sahil Prajapati
  *  Under MIT License
  */
@@ -76,10 +77,7 @@
 		});
 		$.fn[ pluginName ] = function ( options ) {
 				return this.each(function() {
-						// if ( !$.data( this, "plugin_" + pluginName ) ) {
-						// 		$.data( this, "plugin_" + pluginName, new Plugin( this, options ) );
-						// }
-						new Plugin( this, options );
+					new Plugin( this, options );
 				});
 		};
 

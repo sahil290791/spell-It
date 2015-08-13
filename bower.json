@@ -1,6 +1,6 @@
 {
-	"name": "jquery-boilerplate",
-	"version": "1.0.0",
+	"name": "spellIt",
+	"version": "0.1.0",
 	"homepage": "http://sahil290791.github.io/spell-It/",
 	"authors": [
 		"Sahil Prajapati <sahilprjpt206@gmail.com>"
@@ -10,9 +10,9 @@
 	"keywords": [
 		"jquery",
 		"plugin",
-		"boilerplate",
+		"spellIt",
 		"jquery-plugin",
-		"jquery-boilerplate"
+		"spell-it"
 	],
 	"license": "MIT"
 }

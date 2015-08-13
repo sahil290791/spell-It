@@ -1,4 +1,5 @@
 /*
+ *  Spell-It - v1.0.0
  *  Made by Sahil Prajapati
  *  Under MIT License
  */
@@ -7,10 +8,11 @@
 ;(function ( $, window, document, undefined ) {
 
 	"use strict";
-		var pluginName = "spellIt",
+		// Create the defaults once
+		var pluginName = "spellMe",
 						defaults = {
-							className: "spellIt",
-							target: "result",
+							className: "spellMe",//class to be added to table
+							target: "result",//id name
 							getTabulatedResult: true
 						};
 		
@@ -75,7 +77,7 @@
 		});
 		$.fn[ pluginName ] = function ( options ) {
 				return this.each(function() {
-						new Plugin( this, options );
+					new Plugin( this, options );
 				});
 		};
 
