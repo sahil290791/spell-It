@@ -1,5 +1,5 @@
 /*
- *  Spell-It - v1.0.0
+ *  Spell-Me - v0.2.3
  *  Made by Sahil Prajapati
  *  Under MIT License
  */
@@ -22,13 +22,18 @@
 				this._defaults = defaults;
 				this._name = pluginName;
 				this.lowercaseWord = new Array;
-				this.terms = {"a" : "Alfa", "b": "Bravo", "c": "Charlie", "d": "Delta", "e": "Echo", "f": "Foxtrot", "g": "Golf", "h": "Hotel", "i": "India", "j": "Juliett", "k": "Kilo","l": "Lima", "m": "Mike", "n": "November", "o": "Oscar", "p": "Papa", "q": "Quebec", "r": "Romeo", "s": "Sierra", "t": "Tango", "u": "Uniform", "v": "Victor", "w": "Whiskey", "x": "X-ray", "y": "Yankee", "z": "Zulu", "0": "Zero", "1": "One", "2": "Two", "3": "Three", "4": "Four", "5": "Five", "6": "Six", "7": "Seven", "8": "Eight", "9": "Nine", ".": "Dot", "@": "At Sign", "?": "Question Mark", "!": "Exclamation Mak", "&" : "Ampersand", "-": "Minus", "_": "Underscore", "*": "Star", "$": "Dollar", "#": "Hash", "%": "Percentage", "^": "Caret", "\u20AC": "Euro Sign", "~": "Tilde", ";": "Semicolon", ":" : "Colon", "(": "Left Bracket", ")": "Right Bracket", "|": "Vertical Bar/Pipe", "+": "Plus Sign", ",": "Comma"};
+				this.terms = {"a" : "Alfa", "b": "Bravo", "c": "Charlie", "d": "Delta", "e": "Echo", "f": "Foxtrot", "g": "Golf", "h": "Hotel", "i": "India", "j": "Juliett", "k": "Kilo","l": "Lima", "m": "Mike", "n": "November", "o": "Oscar", "p": "Papa", "q": "Quebec", "r": "Romeo", "s": "Sierra", "t": "Tango", "u": "Uniform", "v": "Victor", "w": "Whiskey", "x": "X-ray", "y": "Yankee", "z": "Zulu", "0": "Zero", "1": "One", "2": "Two", "3": "Three", "4": "Four", "5": "Five", "6": "Six", "7": "Seven", "8": "Eight", "9": "Nine", ".": "Dot", "@": "At Sign", "?": "Question Mark", "!": "Exclamation Mak", "&" : "Ampersand", "-": "Minus", "_": "Underscore", "*": "Star", "$": "Dollar", "#": "Hash", "%": "Percentage", "^": "Caret", "€": "Euro Sign", "~": "Tilde", ";": "Semicolon", ":" : "Colon", "(": "Left Bracket", ")": "Right Bracket", "|": "Vertical Bar/Pipe", "+": "Plus Sign", ",": "Comma", "/": "Forward Slash", "\\":"Backslash", " ":"Space", "=": "Equal Sign", "\"": "Double Quotation Mark", "'":"Single Quotation Mark", "°": "Degree Symbol"};
 				this.init();
 		}
 		$.extend(Plugin.prototype, {
 				init: function () {
 						var string = [];
-						this.mainString = this.element.innerHTML;
+						if (this.element.nodeName !== "INPUT"){
+							this.mainString = this.element.textContent;
+						}
+						else{
+							this.mainString = this.element.value;
+						}
 						this.words = new Array;
 						this.actual_code = new Array;
 						this.actual_code = this.mainString.split('');
@@ -77,7 +82,7 @@
 		});
 		$.fn[ pluginName ] = function ( options ) {
 				return this.each(function() {
-					new Plugin( this, options );
+						new Plugin( this, options );
 				});
 		};
 
