@@ -16,23 +16,24 @@
 
 3. Call the plugin:
 
-	```javascript
+```javascript
 	$("#code").spellMe({
 		className: "spellify",//optional class to be added to the table
 		target: "result",//id name
 		getTabulatedResult: true // appends a table to the specified target
 	});
-	```
+```
 ## Guides
 
 Call it on the element which contains the code and that's it. If you have your own way of representing the spellified code. Just set the getTabulatedResult option to false and it will return an array of the spellified code.
-	```javascript
+
+```javascript
 	var spellifiedCode = $("#code").spellMe({
 							className: "spellify",
 							getTabulatedResult: false
 						});
 	//returns ["Alfa", "Romeo", "Tango"]
-	```
+```
 
 Available options: 
 
