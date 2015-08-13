@@ -29,8 +29,13 @@
       "url": "https://github.com/sahil290791"
     }
   ],
-  "license": "MIT",
-  "devDependencies": {
+  "licenses": [
+    {
+      "type":"MIT",
+      "url": "https://github.com/sahil290791/spell-It/blob/master/LICENSE"
+    }
+  ],
+  "dependencies": {
 		"jquery": ">=1.9"
   }
 }
