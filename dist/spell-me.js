@@ -1,5 +1,5 @@
 /*
- *  Spell-Me - v0.2.4
+ *  Spell-Me - v0.2.5
  *  Made by Sahil Prajapati
  *  Under MIT License
  */
