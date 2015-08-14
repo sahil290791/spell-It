@@ -19,8 +19,8 @@
 
 ```javascript
 	$("#code").spellMe({
-		className: "spellify",//optional class to be added to the table
-		target: "#result",//id or class multiple classes can be added like: "table table-responsive"
+		className: "spellify",//multiple classes to be added to the table e.g. "table table-reponsive"
+		target: "#result",//id or class e.g. ".myClass"
 		getTabulatedResult: true // appends a table to the specified target
 	});
 ```
