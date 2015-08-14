@@ -19,7 +19,7 @@
 ```javascript
 	$("#code").spellMe({
 		className: "spellify",//optional class to be added to the table
-		target: "result",//id name
+		target: "#result",//id or class multiple classes can be added like: "table table-responsive"
 		getTabulatedResult: true // appends a table to the specified target
 	});
 ```
