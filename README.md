@@ -1,3 +1,4 @@
+[![npm version](https://badge.fury.io/js/spell-me.svg)](http://badge.fury.io/js/spell-me) [![Build Status](https://travis-ci.org/sahil290791/spell-me.svg?branch=master)](https://travis-ci.org/sahil290791/spell-me)
 ### This plugin provides a simple way to spell characters of a string and present it to the user. It supports various characters and symbols.
 
 ## Usage
@@ -18,8 +19,8 @@
 
 ```javascript
 	$("#code").spellMe({
-		className: "spellify",//optional class to be added to the table
-		target: "result",//id name
+		className: "spellify",//multiple classes can be added to the table e.g. "table table-reponsive"
+		target: "#result",//id or class e.g. ".myClass"
 		getTabulatedResult: true // appends a table to the specified target
 	});
 ```
@@ -39,9 +40,7 @@ Available options:
 
 ```html
 	 	className: "anyClass" ( Use this option to add a class to the table created.)
-	
 	 	target: "target-ID" (Specify the ID of the element to which the result should be appended to.)
-	
 	 	getTabulatedResult: true (true by default, returns a HTML table appended to the target
 							, if set to false it will give an array of the spellified characters)
 ```							
