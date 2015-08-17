@@ -25,7 +25,25 @@
     	<div class="col-md-12 col-sm-12 col-xs-12 col-lg-12">
         <p class="text-justify well"> This plugin provides a way to spell characters from a string and present it to the user.
         Call it on the element which contains the code and that's it. If you have your own way of representing the spellified code. Just set the getTabulatedResult option to false and it will return an array of the spellified code.</p>
-  
+    
+      <div class="col-md-12 col-lg-12 ">
+      <h3>Usage: </h3>
+        <pre>
+             //to get tabulated result
+                  var codeOuput = $("#code").spellMe({
+                      className: "table table-bordered",
+                      target: "#result",
+                      getTabulatedResult: true
+                   });
+                   
+                //to store output in a variable
+                  var codeOuput = $("#code").spellMe({
+                      getTabulatedResult: false
+                   }).returnWords();             
+            
+        </pre>
+      </div>
+    
       	<div class="col-md-6 col-sm-12 col-xs-12 col-lg-6">
           <label for="codeInput">Code</label>: <input class="form-control margin-top-md" type="text" id="codeInput" placeholder="Please enter code.."><span id="code" class="hidden"></span>
           <div class="alert alert-danger hidden margin-top-sm"></div>
@@ -36,7 +54,7 @@
           <div id="result"></div>
         </div>
       </div>	
-    
+
     </div>
     <footer>
       <div class="col-md-12 col-sm-12 col-xs-12 col-lg-12 text-center">
@@ -58,17 +76,18 @@
           $('#code').html(code);
           if (code.length > 0){
             $('.alert').addClass('hidden').html('');
-            var code = $("#code").spellMe({
+            var codeOuput = $("#code").spellMe({
              		className: "table table-bordered",
              		target: "#result",
              		getTabulatedResult: true
              });
-            code.destroy;
           }
           else{
             $('.alert').removeClass('hidden').html('Code cannot be left empty!');
           }
         }); 
+        
+
       });
     </script>
   </body>

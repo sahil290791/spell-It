@@ -1,5 +1,5 @@
 /*
- *  Spell-Me - v0.2.5
+ *  Spell-Me - v0.2.6
  *  Made by Sahil Prajapati
  *  Under MIT License
  */
@@ -15,7 +15,7 @@
 							target: "result",//id name
 							getTabulatedResult: true
 						};
-		
+		var words = new Array();
 		function Plugin ( element, options ) {
 				this.element = element;
 				this.settings = $.extend( {}, defaults, options );
@@ -42,6 +42,7 @@
 			            for (var i=0; i < string.length; i++){
 			                this.words.push(this.terms[string[i]]);
 			            }
+			            words = this.words;
 			            if (this.settings.getTabulatedResult === true){
 			            	return this.showOutput();
 			            }
@@ -58,13 +59,6 @@
 			                obj[this.actual_code[i]] = this.words[i];
 			            }
 			            return obj;
-		        },
-		        destroy: function(){
-		        	this.mainString = "";
-					this.words = "";
-					this.actual_code = "";
-					this.actual_code = "";
-					this.lowercaseWord = "";
 		        },
 		        showOutput: function(){
 		        	var container = $('<table />');
@@ -85,5 +79,11 @@
 						new Plugin( this, options );
 				});
 		};
+
+		$.fn.extend({
+    		returnWords: function() {
+		            return words;
+		    }
+		});
 
 })( jQuery, window, document );
