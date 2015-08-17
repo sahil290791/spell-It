@@ -30,9 +30,8 @@ Call it on the element which contains the code and that's it. If you have your o
 
 ```javascript
 	var spellifiedCode = $("#code").spellMe({
-							className: "spellify",
 							getTabulatedResult: false
-						});
+						}).returnWords();
 	//returns ["Alfa", "Romeo", "Tango"]
 ```
 
@@ -40,7 +39,7 @@ Available options:
 
 ```html
 	 	className: "anyClass" ( Use this option to add a class to the table created.)
-	 	target: "target-ID" (Specify the ID of the element to which the result should be appended to.)
+	 	target: "target-ID/CLASS" (Specify the ID/CLASS of the element to which the result should be appended to.)
 	 	getTabulatedResult: true (true by default, returns a HTML table appended to the target
 							, if set to false it will give an array of the spellified characters)
 ```							
