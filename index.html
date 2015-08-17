@@ -8,8 +8,10 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" type = "text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
-   <link href='http://fonts.googleapis.com/css?family=Arvo:400,400italic' rel='stylesheet' type='text/css'>
+   <link href='https://fonts.googleapis.com/css?family=Arvo:400,400italic' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="assets/css/demo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/styles/default.min.css">
+
     
 </head>
   <body>
@@ -18,14 +20,31 @@
         <div class="navbar-header">
           <a class="navbar-brand" href="#">SPELL-ME</a>
         </div>
-        <a class="pull-right link" href="https://github.com/sahil290791"><img src="assets/images/profilePic.jpg" class="img-circle"></a>
+        <a class="pull-right link" href="https://github.com/sahil290791"><img src="assets/images/profilePic.png" class="img-circle"></a>
       </div>
     </nav>
     <div class="container-fluid">
     	<div class="col-md-12 col-sm-12 col-xs-12 col-lg-12">
         <p class="text-justify well"> This plugin provides a simple way to spell characters from a string and present it to the user.
         Call it on the element which contains the code and that's it. If you have your own way of representing the spellified code. Just set the getTabulatedResult option to false and it will return an array of the spellified code.</p>
-  
+      <div class="col-md-12 col-lg-12 ">
+        <h3>Usage: </h3>
+        <pre><code class="javascript">
+             //to get tabulated result
+                  var codeOuput = $("#code").spellMe({
+                      className: "table table-bordered",
+                      target: "#result",
+                      getTabulatedResult: true
+                   });
+                   
+                //to store output in a variable
+                  var codeOuput = $("#code").spellMe({
+                      getTabulatedResult: false
+                   }).returnWords();             
+            </code>
+        </pre>
+      </div>
+
       	<div class="col-md-6 col-sm-12 col-xs-12 col-lg-6">
           <label for="codeInput">Code</label>: <input class="form-control margin-top-md" type="text" id="codeInput" placeholder="Please enter code.."><span id="code" class="hidden"></span>
           <div class="alert alert-danger hidden margin-top-sm"></div>
@@ -36,7 +55,6 @@
           <div id="result"></div>
         </div>
       </div>	
-    
     </div>
     <footer>
       <div class="col-md-12 col-sm-12 col-xs-12 col-lg-12 text-center">
@@ -50,6 +68,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> 
     <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script> 
     <script src="dist/spell-me.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/highlight.min.js"></script>
 
     <script type="text/javascript">
       $(document).ready(function(){
@@ -63,12 +82,15 @@
              		target: "#result",
              		getTabulatedResult: true
              });
-            code.destroy;
           }
           else{
             $('.alert').removeClass('hidden').html('Code cannot be left empty!');
           }
         }); 
+
+        $('pre code').each(function(i, block) {
+            hljs.highlightBlock(block);
+          });
       });
     </script>
   </body>

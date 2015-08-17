@@ -70,7 +70,6 @@
 		        	data += "</tbody>";
 		        	container.addClass(this.settings.className).append(data);
 		        	$(this.settings.target).html('').append(container);
-		        	this.destroy();
 		        }
 
 		});
