@@ -1,4 +1,6 @@
 [![npm version](https://badge.fury.io/js/spell-me.svg)](http://badge.fury.io/js/spell-me) [![Build Status](https://travis-ci.org/sahil290791/spell-me.svg?branch=master)](https://travis-ci.org/sahil290791/spell-me)
+[![Packagist Downloads](https://poser.pugx.org/sahil290791/spell-me/downloads)](https://packagist.org/packages/sahil290791/spell-me)
+[![Monthly Downloads](https://poser.pugx.org/sahil290791/spell-me/d/monthly)](https://packagist.org/packages/sahil290791/spell-me)
 ### This plugin provides a simple way to spell characters of a string and present it to the user. It supports various characters and symbols.
 
 ## Usage
