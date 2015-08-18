@@ -19,6 +19,8 @@
         "source": "https://github.com/sahil290791/spell-me",
         "docs": "https://github.com/sahil290791/README.md"
     },
-    "minimum-stability": "stable",
-    "prefer-stable": true
+"autoload": {
+	"psr-4": {
+	"sahil290791\\spell-me\\": ""
+	}
 }
