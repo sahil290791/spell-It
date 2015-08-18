@@ -1,26 +1,19 @@
 {
-    "name": "sahil290791/spell-me",
-    "description": "A jQuery plugin to spell characters for easy readability",
-    "version": "0.2.6",
-    "type": "library",
-    "keywords": ["spell me", "spell-me", "spell", "me"],
-    "homepage": "https://sahil290791.github.io/spell-me/",
-    "time": "2012-12-21",
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Sahil Prajapati",
-            "email": "sahilprjpt206@gmail.com"
-        }
-    ],
-    "support": {
-        "email": "sahilprjpt206@gmail.com",
-        "issues": "https://github.com/sahil290791/spell-me/issues",
-        "source": "https://github.com/sahil290791/spell-me",
-        "docs": "https://github.com/sahil290791/README.md"
-    },
-"autoload": {
-	"psr-4": {
-	"sahil290791\\spell-me\\": ""
+	"name": "sahil290791/spell-me",
+	"description": "A jQuery plugin to spell characters for easy readability",
+	"keywords": ["spell me", "spell-me", "spell", "me"],
+	"homepage": "https://github.com/sahil290791/spell-me",
+	"license": "MIT",
+	"authors": [
+		{
+		"name": "Sahil Prajapati",
+		"email": "sahilprjpt206@gmail.com,
+		"homepage": "https://www.github.com/sahil290791"
+		}
+	],
+	"autoload": {
+		"psr-4": {
+		"sahil290791\\spell-me\\": ""
+		}
 	}
 }
