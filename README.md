@@ -26,7 +26,7 @@
 ```
 ## Guides
 
-Call it on the element which contains the code and that's it. If you have your own way of representing the spellified code. Just set the getTabulatedResult option to false and it will return an array of the spellified code.
+Call it on the element which contains the code and that's it. If you have your own way of representing the spellified code. Just set the getTabulatedResult option to false and use the returnWords method, it will return an array of the spellified code.
 
 ```javascript
 	var spellifiedCode = $("#code").spellMe({
@@ -51,10 +51,6 @@ Click [here](https://sahil290791.github.io/spell-me/) to see the demo.
 ## Contributing
 
 Check [CONTRIBUTING.md](https://github.com/sahil290791/spell-me/blob/master/CONTRIBUTING.md) for more information.
-
-## History
-
- for detailed changelog.
 
 ## License
 
